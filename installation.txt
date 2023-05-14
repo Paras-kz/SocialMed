@@ -1,0 +1,15 @@
+-create AQU folder> pip install virtualenv> virtualenv aq_venv> aq_venv\scripts\activate
+-pip install django> pip install djangorestframework
+-django-admin startproject socialmed> cd socialmed
+-python manage.py startapp base> 
+-in settings.py add base app>add 'rest_framework', remove sqllite3 addand configure mysql
+-python manage.py runserver>
+-create custom user model->class SMUser(AbstractBaseUser): and class SMUserManager(BaseUserManager):
+https://docs.djangoproject.com/en/1.11/topics/auth/customizing/#custom-users-and-proxy-models
+-in settings.py add- AUTH_USER_MODEL = 'base.SMUser'
+-pip install mysqlclient > create a db in mysql with same name
+-pip install django-filter
+-python manage.py makemigrations
+-python manage.py migrate
+-python manage.py createsuperuser
+-
